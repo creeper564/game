@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07070a" />
+    <title>GAMEKNIGHT SMP — Serveur Minecraft</title>
+    <meta
+      name="description"
+      content="GameKnight SMP, le serveur Minecraft de GameKnight pour sa communauté YouTube et Twitch. Java &amp; Bedrock, crafts custom, Discord officiel."
+    />
+    <meta property="og:title" content="GAMEKNIGHT SMP — Serveur Minecraft" />
+    <meta property="og:description" content="Le serveur Minecraft de GameKnight. Java & Bedrock, crafts custom, communauté Discord." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
+    <canvas id="embers" aria-hidden="true"></canvas>
+
+    <header class="topbar">
+      <div class="topbar-inner">
+        <p class="live-pill">
+          <span class="dot" data-status-dot></span>
+          <span data-status-text>Vérification du serveur…</span>
+        </p>
+        <div class="status-clock" data-clock>
+          <span class="status-label" data-clock-label>Heure</span>
+          <span class="status-value" data-clock-value>—:—:—</span>
+        </div>
+        <p class="version-chip">Version <strong>26.3</strong></p>
+      </div>
+    </header>
+
+    <div class="nav-wrap">
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="logo" href="index.html">
+          <span class="logo-mark">GK</span>
+          <span class="logo-text">GameKnight <em>SMP</em></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" data-nav-toggle>
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" data-nav-links>
+          <a class="is-active" href="index.html">Accueil</a>
+          <a href="index.html#rejoindre">Rejoindre</a>
+          <a href="crafts.html">Crafts custom</a>
+          <a href="index.html#equipe">Équipe</a>
+          <a href="index.html#faq">FAQ</a>
+          <a class="btn btn-primary btn-sm" href="index.html#connexion">Jouer</a>
+        </div>
+      </nav>
+    </div>
+
+    <main id="contenu">
+      <section class="hero">
+        <p class="eyebrow reveal">Serveur communautaire YouTube &amp; Twitch</p>
+        <h1 class="hero-title reveal" aria-label="GAMEKNIGHT SMP" style="--d: 0.05s">
+          <span class="title-gk" data-title-letters>GAMEKNIGHT</span>
+          <span class="title-smp">SMP</span>
+        </h1>
+        <p class="hero-lead reveal" style="--d: 0.12s">
+          Le Survival Multiplayer créé par le youtubeur <strong>GameKnight</strong>
+          pour sa communauté. Un monde sombre, chaleureux et vivant — géré avec
+          l’aide de <strong>Creeper56</strong> et <strong>gamig_</strong>.
+        </p>
+        <div class="hero-ip reveal" style="--d: 0.18s">
+          <code>smp.gameknight.kdns.fr</code>
+          <button class="btn btn-primary btn-sm" type="button" data-copy="smp.gameknight.kdns.fr">
+            Copier l’IP
+          </button>
+        </div>
+        <div class="hero-actions reveal" style="--d: 0.24s">
+          <a class="btn btn-primary btn-lg" href="#connexion">Rejoindre le serveur</a>
+          <a class="btn btn-ghost btn-lg" href="crafts.html">Voir les crafts custom</a>
+        </div>
+      </section>
+
+      <section class="stats reveal" aria-label="Statistiques du serveur">
+        <div class="stat">
+          <span class="stat-value" data-players-online>0</span>
+          <span class="stat-label">Joueurs en ligne</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" data-players-max>—</span>
+          <span class="stat-label">Slots</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">26.3</span>
+          <span class="stat-label">Version</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">2</span>
+          <span class="stat-label">Java &amp; Bedrock</span>
+        </div>
+      </section>
+
+      <section class="features" id="serveur">
+        <div class="section-head reveal">
+          <p class="eyebrow">Le serveur</p>
+          <h2>Pourquoi jouer ici</h2>
+          <p>Un SMP pensé pour la communauté, avec ses propres règles du jeu et son ambiance.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <div class="feature-icon" aria-hidden="true">⚔️</div>
+            <h3>Crafts custom</h3>
+            <p>Des recettes exclusives : armes, nourriture, utilitaires et objets d’événements.</p>
+          </article>
+          <article class="feature-card reveal" style="--d: 0.08s">
+            <div class="feature-icon" aria-hidden="true">🎮</div>
+            <h3>Java &amp; Bedrock</h3>
+            <p>Joue sur PC, console ou mobile : le serveur accepte les deux éditions.</p>
+          </article>
+          <article class="feature-card reveal" style="--d: 0.16s">
+            <div class="feature-icon" aria-hidden="true">🎉</div>
+            <h3>Events réguliers</h3>
+            <p>Coffres lucky, défis et animations organisés avec la communauté et le staff.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="rejoindre">
+        <div class="section-head reveal">
+          <p class="eyebrow">Rejoindre</p>
+          <h2>En 3 étapes</h2>
+          <p>Pas de prise de tête : tu peux être en jeu en moins d’une minute.</p>
+        </div>
+        <div class="step-grid">
+          <article class="step-card reveal">
+            <span class="step-num">01</span>
+            <h3>Lance Minecraft</h3>
+            <p>Utilise la version <strong>26.3</strong> en Java, ou ton édition Bedrock habituelle.</p>
+          </article>
+          <article class="step-card reveal" style="--d: 0.08s">
+            <span class="step-num">02</span>
+            <h3>Ajoute le serveur</h3>
+            <p>Copie l’adresse correspondant à ton édition ci-dessous, puis colle-la dans « Multijoueur ».</p>
+          </article>
+          <article class="step-card reveal" style="--d: 0.16s">
+            <span class="step-num">03</span>
+            <h3>Rejoins Discord</h3>
+            <p>Retrouve la communauté, les annonces et le staff pour jouer dans de bonnes conditions.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel-grid" id="connexion">
+        <article class="glass-card reveal">
+          <header>
+            <span class="badge">Java</span>
+            <h2>Adresse Java</h2>
+          </header>
+          <p class="ip-value" id="ip-java">smp.gameknight.kdns.fr</p>
+          <p class="muted">Version du serveur : <strong>26.3</strong></p>
+          <div class="btn-row">
+            <button class="btn btn-copy" type="button" data-copy="smp.gameknight.kdns.fr">Copier l’IP</button>
+          </div>
+        </article>
+
+        <article class="glass-card reveal" style="--d: 0.08s">
+          <header>
+            <span class="badge badge-orange">Bedrock</span>
+            <h2>Adresse Bedrock</h2>
+          </header>
+          <p class="ip-value" id="ip-bedrock">bedrock-smp.gameknight.kdns.fr</p>
+          <p class="muted">Port : <strong>37449</strong></p>
+          <div class="btn-row">
+            <button class="btn btn-copy" type="button" data-copy="bedrock-smp.gameknight.kdns.fr">Copier l’IP</button>
+            <button class="btn btn-copy" type="button" data-copy="37449">Copier le port</button>
+          </div>
+        </article>
+
+        <article class="glass-card reveal" style="--d: 0.16s">
+          <header>
+            <span class="badge">Liens officiels</span>
+            <h2>Rejoindre la communauté</h2>
+          </header>
+          <ul class="link-list">
+            <li>
+              <a href="https://discord.gg/cYzq9zG3Ce" target="_blank" rel="noopener noreferrer">
+                <span>Discord</span>
+                <code>discord.gg/cYzq9zG3Ce</code>
+              </a>
+            </li>
+            <li>
+              <a href="https://youtube.com/@GameknightOfficiel" target="_blank" rel="noopener noreferrer">
+                <span>YouTube</span>
+                <code>youtube.com/@GameknightOfficiel</code>
+              </a>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="team" id="equipe">
+        <div class="section-head reveal">
+          <p class="eyebrow">L’équipe</p>
+          <h2>Qui fait vivre GameKnight SMP</h2>
+          <p>Un serveur créé pour la communauté, et tenu à plusieurs pour rester fun, clair et accueillant.</p>
+        </div>
+        <div class="team-grid">
+          <article class="team-card reveal">
+            <div class="avatar founder">GK</div>
+            <h3>GameKnight</h3>
+            <p class="role">Fondateur · Youtubeur</p>
+            <p>Créateur du SMP pour sa communauté YouTube et Twitch. Le serveur porte son univers, son rythme et son ambiance.</p>
+          </article>
+          <article class="team-card reveal" style="--d: 0.08s">
+            <div class="avatar">C56</div>
+            <h3>Creeper56</h3>
+            <p class="role">Gestion · Staff</p>
+            <p>Aide à gérer le serveur au quotidien : organisation, vie de la communauté et bon fonctionnement du SMP.</p>
+          </article>
+          <article class="team-card reveal" style="--d: 0.16s">
+            <div class="avatar">G_</div>
+            <h3>gamig_</h3>
+            <p class="role">Gestion · Staff</p>
+            <p>Co-gestion du serveur aux côtés de GameKnight et Creeper56, pour que tout le monde puisse jouer dans de bonnes conditions.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="section-head reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions fréquentes</h2>
+        </div>
+        <div class="faq reveal">
+          <details>
+            <summary>Quelle version de Minecraft utiliser ?</summary>
+            <p>Le serveur tourne en version 26.3. En Java, lance cette version ; en Bedrock, utilise l’adresse et le port Bedrock indiqués plus haut.</p>
+          </details>
+          <details>
+            <summary>Comment voir les crafts custom ?</summary>
+            <p>Rends-toi sur la page <a href="crafts.html"><code>Crafts custom</code></a> : toutes les recettes y sont présentées avec leur table de craft 3×3.</p>
+          </details>
+          <details>
+            <summary>Où trouver de l’aide ou parler au staff ?</summary>
+            <p>Sur le Discord officiel : GameKnight, Creeper56 et gamig_ y sont présents pour répondre à tes questions.</p>
+          </details>
+          <details>
+            <summary>Le serveur est-il affilié à Mojang ?</summary>
+            <p>Non, GameKnight SMP est un serveur communautaire indépendant, non affilié à Mojang / Microsoft.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="cta-band reveal">
+        <h2>Prêt à rejoindre le SMP ?</h2>
+        <p>Copie l’IP, lance le jeu, et rejoins la communauté.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-lg" type="button" data-copy="smp.gameknight.kdns.fr">Copier l’IP Java</button>
+          <a class="btn btn-ghost btn-lg" href="https://discord.gg/cYzq9zG3Ce" target="_blank" rel="noopener noreferrer">Discord</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>
+          <p class="logo-text">GAMEKNIGHT <em>SMP</em></p>
+          <p class="muted">
+            Serveur Minecraft créé par <strong>GameKnight</strong>, géré avec
+            l’aide de <strong>Creeper56</strong> et <strong>gamig_</strong>.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="crafts.html">Crafts custom</a>
+          <a href="https://discord.gg/cYzq9zG3Ce" target="_blank" rel="noopener noreferrer">discord.gg/cYzq9zG3Ce</a>
+          <a href="https://youtube.com/@GameknightOfficiel" target="_blank" rel="noopener noreferrer">youtube.com/@GameknightOfficiel</a>
+        </div>
+      </div>
+      <p class="copyright">Version 26.3 · Java &amp; Bedrock · Non affilié à Mojang / Microsoft</p>
+    </footer>
+
+    <div class="toast" data-toast role="status" aria-live="polite" hidden>Copié dans le presse-papiers</div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

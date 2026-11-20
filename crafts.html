@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07070a" />
+    <title>Crafts custom — GAMEKNIGHT SMP</title>
+    <meta
+      name="description"
+      content="Liste des crafts custom du serveur GameKnight SMP, avec tables de craft 3x3, recherche et filtres par catégorie."
+    />
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Outfit:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
+    <canvas id="embers" aria-hidden="true"></canvas>
+
+    <header class="topbar">
+      <div class="topbar-inner">
+        <p class="live-pill">
+          <span class="dot" data-status-dot></span>
+          <span data-status-text>Vérification du serveur…</span>
+        </p>
+        <div class="status-clock" data-clock>
+          <span class="status-label" data-clock-label>Heure</span>
+          <span class="status-value" data-clock-value>—:—:—</span>
+        </div>
+        <p class="version-chip">Version <strong>26.3</strong></p>
+      </div>
+    </header>
+
+    <div class="nav-wrap">
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="logo" href="index.html">
+          <span class="logo-mark">GK</span>
+          <span class="logo-text">GameKnight <em>SMP</em></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" data-nav-toggle>
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" data-nav-links>
+          <a href="index.html">Accueil</a>
+          <a href="index.html#rejoindre">Rejoindre</a>
+          <a class="is-active" href="crafts.html" aria-current="page">Crafts custom</a>
+          <a href="index.html#equipe">Équipe</a>
+          <a href="index.html#faq">FAQ</a>
+          <a class="btn btn-primary btn-sm" href="index.html#connexion">Jouer</a>
+        </div>
+      </nav>
+    </div>
+
+    <main id="contenu" class="crafts-page">
+      <section class="page-hero">
+        <p class="eyebrow">Recettes exclusives</p>
+        <h1 class="hero-title page-title" aria-label="Crafts custom — GAMEKNIGHT SMP">
+          <span class="title-gk" data-title-letters>GAMEKNIGHT</span>
+          <span class="title-smp">SMP</span>
+        </h1>
+        <p class="hero-lead">
+          Tous les crafts custom du serveur, présentés comme en jeu : table 3×3,
+          résultat, et infobulle au survol.
+        </p>
+      </section>
+
+      <section class="filters" aria-label="Recherche et filtres de crafts">
+        <label class="search-box">
+          <span class="sr-only" style="position:absolute;left:-9999px">Rechercher un craft</span>
+          <input type="search" placeholder="Rechercher un craft…" data-craft-search autocomplete="off" />
+        </label>
+        <div class="filter-bar" data-filter-bar></div>
+        <p class="muted" data-craft-count aria-live="polite"></p>
+      </section>
+
+      <section class="crafts-list" data-crafts-list></section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>
+          <p class="logo-text">GAMEKNIGHT <em>SMP</em></p>
+          <p class="muted">
+            Serveur Minecraft créé par <strong>GameKnight</strong>, géré avec
+            l’aide de <strong>Creeper56</strong> et <strong>gamig_</strong>.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Accueil</a>
+          <a href="https://discord.gg/cYzq9zG3Ce" target="_blank" rel="noopener noreferrer">discord.gg/cYzq9zG3Ce</a>
+          <a href="https://youtube.com/@GameknightOfficiel" target="_blank" rel="noopener noreferrer">youtube.com/@GameknightOfficiel</a>
+        </div>
+      </div>
+      <p class="copyright">Version 26.3 · Java &amp; Bedrock · Non affilié à Mojang / Microsoft</p>
+    </footer>
+
+    <div class="item-tooltip" data-item-tooltip hidden></div>
+    <div class="toast" data-toast role="status" aria-live="polite" hidden>Copié dans le presse-papiers</div>
+
+    <script src="js/crafts-data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/crafts.js"></script>
+  </body>
+</html>
