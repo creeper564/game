@@ -4,7 +4,7 @@
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const LETTER_DELAY = 110;
   const CLOCK_SWAP_MS = 5000;
-  const STATUS_REFRESH_MS = 60000;
+  const STATUS_REFRESH_MS = 10000;
   const SERVER_HOST = "smp.gameknight.kdns.fr";
 
   /* ---------- Titre animé ---------- */
