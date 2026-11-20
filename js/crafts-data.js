@@ -1,8 +1,8 @@
 /**
  * ============================================================
  *  CRAFTS CUSTOM — GameKnight SMP
- *  Ajoute tes recettes ICI uniquement.
- *  Pas besoin de toucher à crafts.html ni au CSS.
+ *  Généré à partir de la config FasterHoppers (Default Recipes v5.1).
+ *  Ajoute / modifie tes recettes ICI uniquement.
  * ============================================================
  *
  *  1) Déclare un item dans GK_ITEMS (si ce n’est pas déjà fait)
@@ -10,11 +10,6 @@
  *
  *  TEXTURES : prises du wiki officiel https://minecraft.wiki
  *  Le champ `wiki` = nom du fichier Invicon (sans le préfixe "Invicon_").
- *  Exemples :
- *    wiki: "Diamond.png"              → File:Invicon Diamond.png
- *    wiki: "Netherite_Ingot.png"      → File:Invicon Netherite Ingot.png
- *    wiki: "Nether_Star.gif"          → File:Invicon Nether Star.gif
- *
  *  Vérifie le nom exact ici :
  *  https://minecraft.wiki/w/Special:Search?search=Invicon
  *
@@ -22,185 +17,169 @@
  *    0 1 2
  *    3 4 5
  *    6 7 8
- *  Utilise null pour une case vide, ou l’identifiant d’un item.
- *
- *  Tu peux aussi mettre un objet à la place d’un identifiant :
- *    { item: "diamond", count: 2 }
- *    { name: "Item custom", wiki: "Netherite_Sword.png", description: "..." }
+ *  Utilise null pour une case vide (AIR), ou l’identifiant d’un item.
  */
 
 window.GK_ITEMS = {
-  stick: {
-    name: "Bâton",
-    wiki: "Stick.png",
-    description: "Bâton vanille",
+  /* ---------- Items vanille ---------- */
+  hopper: {
+    name: "Entonnoir",
+    wiki: "Hopper.png",
+    description: "Entonnoir vanille",
   },
-  diamond: {
-    name: "Diamant",
-    wiki: "Diamond.png",
-    description: "Diamant vanille",
+  redstone: {
+    name: "Poudre de redstone",
+    wiki: "Redstone_Dust.png",
+    description: "Poudre de redstone",
   },
-  netherite: {
-    name: "Lingot de netherite",
-    wiki: "Netherite_Ingot.png",
-    description: "Lingot de netherite",
+  iron_nugget: {
+    name: "Pépite de fer",
+    wiki: "Iron_Nugget.png",
+    description: "Pépite de fer",
   },
-  nether_star: {
-    name: "Étoile du Nether",
-    wiki: "Nether_Star.gif",
-    description: "Étoile du Nether",
-  },
-  gold_ingot: {
-    name: "Lingot d’or",
-    wiki: "Gold_Ingot.png",
-    description: "Lingot d’or",
-  },
-  gold_block: {
-    name: "Bloc d’or",
-    wiki: "Block_of_Gold.png",
-    description: "Bloc d’or",
-  },
-  apple: {
-    name: "Pomme",
-    wiki: "Apple.png",
-    description: "Pomme vanille",
-  },
-  paper: {
-    name: "Papier",
-    wiki: "Paper.png",
-    description: "Papier vanille",
+  gold_nugget: {
+    name: "Pépite d’or",
+    wiki: "Gold_Nugget.png",
+    description: "Pépite d’or",
   },
   emerald: {
     name: "Émeraude",
     wiki: "Emerald.png",
     description: "Émeraude vanille",
   },
-  ender_pearl: {
-    name: "Perle de l’Ender",
-    wiki: "Ender_Pearl.png",
-    description: "Perle de l’Ender",
+  quartz: {
+    name: "Quartz du Nether",
+    wiki: "Nether_Quartz.png",
+    description: "Quartz du Nether",
   },
-  blaze_rod: {
-    name: "Bâton de Blaze",
-    wiki: "Blaze_Rod.png",
-    description: "Bâton de Blaze",
+  amethyst_shard: {
+    name: "Éclat d’améthyste",
+    wiki: "Amethyst_Shard.png",
+    description: "Éclat d’améthyste",
   },
-  book: {
-    name: "Livre",
-    wiki: "Book.png",
-    description: "Livre vanille",
+  diamond: {
+    name: "Diamant",
+    wiki: "Diamond.png",
+    description: "Diamant vanille",
   },
-  redstone: {
-    name: "Redstone",
-    wiki: "Redstone.png",
-    description: "Poudre de redstone",
+
+  /* ---------- FasterHoppers (icône wiki : entonnoir) ---------- */
+  hopper_slowest: {
+    name: "Entonnoir Slowest",
+    wiki: "Hopper.png",
+    description: "FasterHoppers · Vitesse 4",
   },
-  knight_sword: {
-    name: "Lame du Chevalier",
-    wiki: "Netherite_Sword.png",
-    description: "Épée custom GameKnight SMP (icône wiki : épée en netherite)",
+  hopper_slower: {
+    name: "Entonnoir Slower",
+    wiki: "Hopper.png",
+    description: "FasterHoppers · Vitesse 8",
   },
-  knight_apple: {
-    name: "Pomme du SMP",
-    wiki: "Enchanted_Golden_Apple.gif",
-    description: "Pomme custom — icône wiki : pomme dorée enchantée",
+  hopper_slow: {
+    name: "Entonnoir Slow",
+    wiki: "Hopper.png",
+    description: "FasterHoppers · Vitesse 12",
   },
-  staff_pass: {
-    name: "Sceau du Staff",
-    wiki: "Name_Tag.png",
-    description: "Objet staff — icône wiki : name tag",
+  hopper_fast: {
+    name: "Entonnoir Fast",
+    wiki: "Hopper.png",
+    description: "FasterHoppers · Vitesse 16",
   },
-  warp_compass: {
-    name: "Boussole de Warp",
-    wiki: "Compass.gif",
-    description: "Téléportation vers un warp du spawn — icône wiki : boussole",
+  hopper_faster: {
+    name: "Entonnoir Faster",
+    wiki: "Hopper.png",
+    description: "FasterHoppers · Vitesse 20",
   },
-  lucky_key: {
-    name: "Clé Lucky",
-    wiki: "Ominous_Trial_Key.png",
-    description: "Ouvre un coffre lucky du hub — icône wiki : ominous trial key",
+  hopper_fastest: {
+    name: "Entonnoir Fastest",
+    wiki: "Hopper.png",
+    description: "FasterHoppers · Vitesse 24",
+  },
+  hopper_extreme: {
+    name: "Entonnoir Extreme",
+    wiki: "Hopper.png",
+    description: "FasterHoppers · Vitesse 64",
   },
 };
 
 window.GK_CRAFTS = [
   {
-    id: "lame-chevalier",
-    name: "Lame du Chevalier",
-    category: "Armes",
-    description: "Épée signature du SMP. Plus solide qu’une épée en diamant, avec un léger éclat rouge-orange.",
-    grid: [null, "diamond", null, null, "diamond", null, null, "stick", null],
-    result: { item: "knight_sword", count: 1 },
+    id: "hopper-slowest",
+    name: "Entonnoir Slowest",
+    category: "Hoppers",
+    description: "Premier palier des entonnoirs améliorés. Vitesse : 4.",
+    grid: [null, "redstone", null, "redstone", "hopper", "redstone", null, "redstone", null],
+    result: { item: "hopper_slowest", count: 1 },
   },
   {
-    id: "pomme-smp",
-    name: "Pomme du SMP",
-    category: "Nourriture",
-    description: "Une pomme enchantée custom, craftée avec de l’or et une touche de netherite.",
+    id: "hopper-slower",
+    name: "Entonnoir Slower",
+    category: "Hoppers",
+    description: "Amélioration de l’entonnoir Slowest. Vitesse : 8.",
     grid: [
-      "gold_ingot",
-      "gold_block",
-      "gold_ingot",
-      "gold_block",
-      "apple",
-      "gold_block",
-      "gold_ingot",
-      "netherite",
-      "gold_ingot",
+      "iron_nugget", "redstone", "iron_nugget",
+      "redstone", "hopper_slowest", "redstone",
+      "iron_nugget", "redstone", "iron_nugget",
     ],
-    result: { item: "knight_apple", count: 1 },
+    result: { item: "hopper_slower", count: 1 },
   },
   {
-    id: "boussole-warp",
-    name: "Boussole de Warp",
-    category: "Utilitaires",
-    description: "Permet de revenir vers un warp du spawn. Recette communautaire.",
+    id: "hopper-slow",
+    name: "Entonnoir Slow",
+    category: "Hoppers",
+    description: "Amélioration de l’entonnoir Slower. Vitesse : 12.",
     grid: [
-      null,
-      "ender_pearl",
-      null,
-      "redstone",
-      "emerald",
-      "redstone",
-      null,
-      "blaze_rod",
-      null,
+      "gold_nugget", "redstone", "gold_nugget",
+      "redstone", "hopper_slower", "redstone",
+      "gold_nugget", "redstone", "gold_nugget",
     ],
-    result: { item: "warp_compass", count: 1 },
+    result: { item: "hopper_slow", count: 1 },
   },
   {
-    id: "cle-lucky",
-    name: "Clé Lucky",
-    category: "Événements",
-    description: "Ouvre les coffres lucky lors des events. Le craft peut être activé temporairement.",
+    id: "hopper-fast",
+    name: "Entonnoir Fast",
+    category: "Hoppers",
+    description: "Amélioration de l’entonnoir Slow. Vitesse : 16.",
     grid: [
-      null,
-      "gold_ingot",
-      null,
-      "gold_ingot",
-      "nether_star",
-      "gold_ingot",
-      null,
-      "gold_ingot",
-      null,
+      "emerald", "redstone", "emerald",
+      "redstone", "hopper_slow", "redstone",
+      "emerald", "redstone", "emerald",
     ],
-    result: { item: "lucky_key", count: 1 },
+    result: { item: "hopper_fast", count: 1 },
   },
   {
-    id: "sceau-staff",
-    name: "Sceau du Staff",
-    category: "Staff",
-    description: "Objet réservé à l’équipe (GameKnight, Creeper56, gamig_). Exemple de recette staff.",
+    id: "hopper-faster",
+    name: "Entonnoir Faster",
+    category: "Hoppers",
+    description: "Amélioration de l’entonnoir Fast. Vitesse : 20.",
     grid: [
-      "paper",
-      "nether_star",
-      "paper",
-      "paper",
-      "book",
-      "paper",
-      "paper",
-      "emerald",
-      "paper",
+      "quartz", "redstone", "quartz",
+      "redstone", "hopper_fast", "redstone",
+      "quartz", "redstone", "quartz",
     ],
-    result: { item: "staff_pass", count: 1 },
+    result: { item: "hopper_faster", count: 1 },
+  },
+  {
+    id: "hopper-fastest",
+    name: "Entonnoir Fastest",
+    category: "Hoppers",
+    description: "Amélioration de l’entonnoir Faster. Vitesse : 24.",
+    grid: [
+      "amethyst_shard", "redstone", "amethyst_shard",
+      "redstone", "hopper_faster", "redstone",
+      "amethyst_shard", "redstone", "amethyst_shard",
+    ],
+    result: { item: "hopper_fastest", count: 1 },
+  },
+  {
+    id: "hopper-extreme",
+    name: "Entonnoir Extreme",
+    category: "Hoppers",
+    description: "Le palier ultime des entonnoirs. Vitesse : 64.",
+    grid: [
+      "diamond", "redstone", "diamond",
+      "redstone", "hopper_fastest", "redstone",
+      "diamond", "redstone", "diamond",
+    ],
+    result: { item: "hopper_extreme", count: 1 },
   },
 ];
